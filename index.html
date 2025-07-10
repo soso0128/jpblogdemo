@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <title>桜井紬 さくらいつむぎ / Sakurai Tsumugi）</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style-main.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-217CM1B5T7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-217CM1B5T7');
+  </script>
+
+<script>
+  // 選取容器與按鈕
+  const articleSlider = document.querySelector('.article-card');
+  const forwardBtn = document.querySelector('.forward-btn');
+  const backwardBtn = document.querySelector('.backward-btn');
+
+  // 每次滑動的距離（可調整）
+  const scrollAmount = 350;
+
+  // 點擊右側按鈕：向右滑動
+  forwardBtn.addEventListener('click', () => {
+    articleSlider.scrollBy({
+      left: scrollAmount,
+      behavior: 'smooth'
+    });
+  });
+
+  // 點擊左側按鈕：向左滑動
+  backwardBtn.addEventListener('click', () => {
+    articleSlider.scrollBy({
+      left: -scrollAmount,
+      behavior: 'smooth'
+    });
+  });
+</script>
+</head>
+
+<body>
+  <!-- 導覽列 -->
+  <header class="navbar">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">首頁</a></li>
+        <li><a href="#">預約</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!--基本結構 -->
+  <section class="people-content-wrapper">
+    <!-- 左側人物圖片區 -->
+    <div class="content-banner">
+      <img src="img/Hero Section.png" alt="工程師圖">
+    </div>
+    <!-- 右側文字 + 背景 -->
+    <div class="people-content-text">
+      <div class="people-tags">
+        <h1>Sakurai Tsumugi</h1>
+        <span>自由接案導遊 & 文化體驗導師 </span>
+      </div>
+      <!--自我介紹 + 社群-->
+      <div class="profile-box">
+        <div class="intro">
+          <p>嗨，我是來自長野松本，現居京都。擔任旅遊地陪，擅長神社導覽與在地文化介紹，擁有溫柔氣質與細膩觀察力。<br><br>精通和菓子體驗、隱藏景點探索，會簡單英中韓語，致力讓旅客感受日本的慢旅行魅力與生活美學。</p>
+        </div>
+        <ul class="social-icon">
+          <li><a href="#"><img src="img/icon-YT.png" alt="YouTube"></a></li>
+          <li><a href="#"><img src="img/icon-pc.png" alt="podcast"></a></li>
+          <li><a href="#"><img src="img/icon-fb.png" alt="臉書"></a></li>
+          <li><a href="#"><img src="img/icon-lki.png" alt="linkedin"></a></li>
+          <li><a href="#"><img src="img/icon-ig.png" alt="Instagram"></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="service-title">
+    <div class="title-box">
+      <h2>專業導覽與體驗</h2>
+    </div>
+  </div>
+  <!--專業服務與方案 第一區塊-->
+  <section class="service">
+    <div class="solution">
+      <!-- Ａ款左圖  -->
+      <div class="solution-pic">
+        <img src="img/ServicesPic-1.png" alt="專業服務圖">
+      </div>
+      <!-- Ａ款右字 -->
+      <div class="solution-content">
+        <div class="line"></div>
+        <h3>古都京都慢行旅</h3>
+        <p>漫步祇園花見小路、嵐山竹林與哲學之道，細細感受京都的歷史氣息與四季流轉，搭配私房茶屋與散步小點，享受靜謐的慢旅行節奏。</p>
+      </div>
+    </div>
+  </section>
+
+  <!--專業服務與方案 第二區塊-->
+  <section class="service service-b">
+    <div class="solution solution-reverse">
+      <!-- 左邊內容區 -->
+      <div class="solution-content-left">
+        <div class="line"></div>
+        <h3>職人町巷探訪</h3>
+        <p>走進藏於京都小巷中的職人店鋪，參觀扇子、陶器、染布等手作工藝的製作過程，與老匠對話，感受傳統技藝的魅力與溫度。</p>
+      </div>
+      <!-- 右圖 -->
+      <div class="solution-pic-right">
+        <img src="img/ServicesPic-2.png" alt="專業服務圖">
+      </div>
+    </div>
+  </section>
+
+  <!--專業服務與方案 第一區塊-->
+  <section class="service">
+    <div class="solution">
+      <!-- Ａ款左圖  -->
+      <div class="solution-pic">
+        <img src="img/ServicesPic-3.png" alt="專業服務圖">
+      </div>
+      <!-- Ａ款右字 -->
+      <div class="solution-content">
+        <div class="line"></div>
+        <h3>神社巡禮與祈福體驗</h3>
+        <p>從知名的伏見稻荷大社到在地小神社，深入了解日本神道文化、參拜禮儀與御守背後的故事，體驗書寫繪馬與抽籤祈福。</p>
+      </div>
+    </div>
+  </section>
+
+  <!--專業服務與方案 第二區塊-->
+  <section class="service service-b">
+    <div class="solution solution-reverse">
+      <!-- 左邊內容區 -->
+      <div class="solution-content-left">
+        <div class="line"></div>
+        <h3>和菓子手作與茶道入門</h3>
+        <p>體驗日式和菓子親手製作，了解其與節氣文化的連結，並進入茶室學習茶道基本禮儀，品茗靜心，領略日本款待之道。</p>
+      </div>
+      <!-- 右圖 -->
+      <div class="solution-pic-right">
+        <img src="img/ServicesPic-4.png" alt="專業服務圖">
+      </div>
+    </div>
+  </section>
+
+  <div class="service infomore">
+    <a href="#" class="cta-button">
+      聯繫我，取得更多資訊！<span class="arrow-circle">→</span></a>
+  </div>
+
+  <div class="case-title">
+    <div class="title-box">
+      <h2>體驗分享案例</h2>
+    </div>
+  </div>
+  <!--成功案例-->
+  <section class="consulting-section">
+    <div class="consulting-container">
+      <!-- 左圖 -->
+      <div class="coach-image">
+        <img src="img/consulting-pic.png" alt="分享圖">
+      </div>
+
+      <!-- 右側文字內容 -->
+      <div class="consulting-text">
+        <div class="consulting-textbox-A">
+          <div class="consulting-line"></div>
+          <p>
+            第一次參拜神社時好緊張，但紬小姐一步步引導，連如何鞠躬、投幣都解說得很溫柔。她還分享御守的意義與故事，讓整趟祈福變得特別有感。
+          </p>
+        </div>
+
+        <div class="consulting-textbox-B">
+          <div class="consulting-line"></div>
+          <p>
+            不走制式行程、不趕景點打卡，紬小姐擅長規劃「專屬你的深度導覽旅程」——無論是神社文化、巷弄探店、和菓子體驗或京都手工藝，她都以溫柔與細膩陪你走一段旅程。
+          </p>
+          <a href="#" class="primary-btn">立即預約討論</a>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <!--成功案例介紹-->
+  <section class="case-section">
+    <div class="case-container">
+      <ul class="case-list">
+        <li class="case-item">
+          <img src="img/case-1.png" alt="工程師頭像">
+          <h3>走進京都生活的一天</h3>
+          <ul class="case-points">
+            <li>感覺自己融入當地</li>
+            <li>超真實又溫暖的旅行體驗</li>
+          </ul>
+          <div class="case-line">
+            <a href="#" class="case-btn">更多精彩記錄</a>
+          </div>
+        </li>
+
+        <li class="case-item">
+          <img src="img/case-2.png" alt="工程師頭像">
+          <h3>像和風一樣的溫柔導覽</h3>
+          <ul class="case-points">
+            <li>解說細膩又帶點浪漫</li>
+            <li>適合喜歡拍照與文字的人</li>
+          </ul>
+          <div class="case-line">
+            <a href="#" class="case-btn">更多精彩記錄</a>
+          </div>
+        </li>
+
+        <li class="case-item">
+          <img src="img/case-3.png" alt="工程師頭像">
+          <h3>學會用味蕾旅行</h3>
+          <ul class="case-points">
+            <li>講解每一種點心與節氣、文化的關聯</li>
+            <li>不是走馬看花的景點行程</li>
+          </ul>
+          <div class="case-line">
+            <a href="#" class="case-btn">更多精彩記錄</a>
+          </div>
+        </li>
+
+        <li class="case-item">
+          <img src="img/case-4.png" alt="工程師頭像">
+          <h3>像老朋友一樣的陪伴感</h3>
+          <ul class="case-points">
+            <li>不只是導覽，更像是貼心的旅伴</li>
+            <li>深入京都的日常與人情味</li>
+          </ul>
+          <div class="case-line">
+            <a href="#" class="case-btn">更多精彩記錄</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+  <!--更多接案嚮導-->
+  <div class="blogpost">
+    <div class="blogpost-title">
+      <h2>更多接案嚮導</h2>
+    </div>
+  </div>
+  <div class="Share-article">
+    <!-- 文章卡片列表 -->
+    <ul class="article-card">
+      <li class="card-content">
+        <div class="content-A">
+          <img src="img/article-card-1.png" alt="文章圖">
+          <time class="post-time">2025/01/01</time>
+          <div class="hashtext">
+            <a href="#">#鹿文化</a>
+            <a href="#">#親子旅行</a>
+            <a href="#" class="btn-small">最新文章</a>
+          </div>
+        </div>
+        <div class="content-B">
+          <h4>佐藤晴美_笑容溫暖的奈良鹿導覽達人</h4>
+          <p class="text">帶領旅客走進奈良公園與古寺，親近鹿群，了解祂們與信仰的連結，適合親子與初訪旅客。</p>
+          <a href="#" class="btn">閱讀內文</a>
+        </div>
+      </li>
+      <li class="card-content">
+        <div class="content-A">
+          <img src="img/article-card-2.png" alt="文章圖">
+          <time>2025/01/01</time>
+          <div class="hashtext">
+            <a href="#">#美食</a>
+            <a href="#">#吃貨必訪</a>
+            <a href="#" class="btn-small">人氣文章</a>
+          </div>
+        </div>
+        <div class="content-B">
+          <h4>高橋颯_熟悉東京巷弄美食的在地饕客</h4>
+          <p class="text">
+            不走觀光熱門餐廳，深入東京居民愛去的食堂與小店，品嚐最道地的日常料理與故事。
+          </p>
+          <a href="#" class="btn">閱讀內文</a>
+        </div>
+      </li>
+      <li class="card-content">
+        <div class="content-A">
+          <img src="img/article-card-3.png" alt="文章圖">
+          <time>2025/01/01</time>
+          <div class="hashtext">
+            <a href="#">#攝影散策</a>
+            <a href="#">#文學地景 </a>
+          </div>
+        </div>
+        <div class="content-B">
+          <h4>藤井玲子_擅長古都攝影與文學景點導覽</h4>
+          <p class="text">
+            是結合攝影與文學，帶你拜訪京都詩人與小說家的足跡，紀錄城市風景與心靈片刻。</p>
+          <a href="#" class="btn">閱讀內文</a>
+        </div>
+      </li>
+    </ul>
+
+    <div class="button-wrapper">
+      <!--左前按鈕-->
+      <div class="forward-btn">
+        <a href="#" class="arrow-btn forward"></a>
+      </div>
+      <!--右退按鈕-->
+      <div class="backward-btn">
+        <a href="#" class="arrow-btn backward"></a>
+      </div>
+    </div>
+  </div>
+  <!-- 底線-->
+  <div class="content-wrapper2-line"> </div>
+  <!--表單區 -->
+  <section class="people-content-wrapper-form">
+    <!-- 左側人物圖片區 -->
+    <div class="content-banner-form">
+      <img src="img/form-Section.png" alt="工程師圖">
+    </div>
+    <!-- 右側表單 -->
+    <div class="people-content-form">
+      <div class="form-box">
+        <h2>訂閱電子報</h2>
+        <p>立即訂閱，搶先獲得 <span class="highlight">體驗折價券</span> Ｘ <span class="highlight">京都虎屋</span> 的限定小禮！</p>
+        <form>
+          <input type="text" placeholder="請輸入您的大名" required>
+          <input type="email" placeholder="請輸入您的電子信箱" required>
+          <a href="#" class="form-btn">我想訂閱</a>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 底線-->
+  <div class="content-wrapper2-form-line"> </div>
+
+
+  <!--與我聯繫-->
+  <section class="contact-section">
+    <h2>與我聯繫</h2>
+    <p class="email">
+      <span class="email-text">
+        <a href="mailto:travel.jp@gmail.com">"travel.jp@gmail.com"</a>合作洽談</span> <a
+        href="mailto:travel.jp@gmail.com" class="arrow-go-2">→</a>
+    </p>
+    <ul class="contact-list">
+      <li>
+        <a href="#">
+          <div class="contact-item">
+            <img src="img/icon-YT.png" alt="YouTube"> Youtube 達人帶著你
+          </div>
+          <span class="arrow-go">→</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="contact-item">
+            <img src="img/icon-pc.png" alt="Podcast"> podcast 達人帶著你
+          </div>
+          <span class="arrow-go">→</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="contact-item">
+            <img src="img/icon-fb.png" alt="Facebook"> Facebook 達人帶著你
+          </div>
+          <span class="arrow-go">→</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="contact-item">
+            <div class="contact-item"></div>
+            <img src="img/icon-lki.png" alt="LinkedIn"> linkedin 達人帶著你
+          </div>
+          <span class="arrow-go">→</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="contact-item">
+            <img src="img/icon-ig.png" alt="Instagram"> Instagram 達人帶著你
+          </div>
+          <span class="arrow-go">→</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 底線-->
+  <div class="content-wrapper2-line"></div>
+
+  <!-- 頁尾 -->
+  <div class="footer">
+    <p>© 2025 Traveljp. All rights reserved.</p>
+  </div>
+</body>
+
+</html>
